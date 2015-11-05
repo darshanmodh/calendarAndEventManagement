@@ -40,8 +40,8 @@ import org.hibernate.Transaction;
 public class ProfileServlet extends HttpServlet {
 
     private String dbURL = "jdbc:mysql://localhost:3306/project";
-    private String dbUser = "darshan";
-    private String dbPass = "darshan";
+    private String dbUser = "root";
+    private String dbPass = "";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

@@ -59,8 +59,8 @@ public class LoginServlet extends HttpServlet {
             String driverName = "com.mysql.jdbc.Driver";
             String url = "jdbc:mysql://localhost:3306";
             String dbName = "project";
-            String dbUser = "darshan";
-            String dbPass = "darshan";
+            String dbUser = "root";
+            String dbPass = "";
 
             Reg reg = regs.get(0);
             System.out.println("Found" + reg);

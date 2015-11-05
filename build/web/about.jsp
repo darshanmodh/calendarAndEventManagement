@@ -114,7 +114,7 @@
                         <tr>
                             <th height="33" align="left" scope="row">Email ID</th>
                             <th>: </th>
-                            <td> <a href="mailto:yashce04@gmail.com">dhruviibrahmbhatt210@gmail.com</a></td>
+                            <td> <a href="mailto:dhruviibrahmbhatt210@gmail.com">dhruviibrahmbhatt210@gmail.com</a></td>
                         </tr>
                     </table>
                 </div>

@@ -31,8 +31,8 @@ import org.hibernate.criterion.Restrictions;
 public class aboutServlet extends HttpServlet {
 
     private String dbURL = "jdbc:mysql://localhost:3306/project";
-    private String dbUser = "darshan";
-    private String dbPass = "darshan";
+    private String dbUser = "root";
+    private String dbPass = "";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

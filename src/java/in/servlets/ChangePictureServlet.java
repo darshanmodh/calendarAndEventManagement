@@ -53,8 +53,8 @@ public class ChangePictureServlet extends HttpServlet {
         String conUrl = "jdbc:mysql://localhost:3306/";
         String driverName = "com.mysql.jdbc.Driver";
         String databaseName = "project";
-        String usrName = "darshan";
-        String usrPass = "darshan";
+        String usrName = "root";
+        String usrPass = "";
 
         InputStream inputStream = null;
 
