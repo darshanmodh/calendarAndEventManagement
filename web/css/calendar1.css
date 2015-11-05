@@ -1,0 +1,142 @@
+html,body
+{
+    background-color: #e0e0e0;
+
+}
+
+tr.t1 td
+{
+    font:25px sans-serif;
+    color: #2F4F4F;
+}
+
+tr.d1 th {
+    background-color: #778899; color: #e0e0e0;
+    font:30px  cursive; 
+}
+
+tr.d2
+{
+    background-color: #B0C4DE;
+}
+
+a.a1
+{
+    color: #000;
+    font:30px cursive;
+}
+
+select
+{
+    color: #222222;
+    font:23px arial;
+}
+
+
+a.l1
+{
+    color: #000;
+    font: 30px arial;
+}
+
+div.l1
+{
+    height: 95px;
+    font-size: 48px;    
+    text-align: center;
+    line-height: 95px;
+    font: 30px cursive;
+    vertical-align: central;
+}
+
+h1.w1
+{
+    color: #000;
+    font: 30px sans-serif;
+}
+
+span {
+    font-size: 20px;
+}
+
+#header
+{
+    position: relative;
+}
+
+#menu
+{
+    background: #C3C3C3;
+    color: white;
+    padding: 10px;
+}
+
+#menu a
+{
+    text-decoration: none;
+    padding: 7px;
+}
+
+#menu a:hover
+{
+    background: #e0e0e0;
+    color: red;
+}
+
+#footer
+{
+    text-align: center;
+    background: #C3C3C3;
+    color: black;
+    padding: 10px;
+}
+
+#header
+{
+    font-family: monospace;
+    font-size: x-large;
+    height:50px;
+    background: #e0e0e0;
+    color: black;
+    /*    text-align: center;*/
+    letter-spacing: 3px;
+    box-sizing: border-box;
+
+    background:red;
+    animation:myfirst 5s infinite;
+    -moz-animation: myfirst 5s infinite;
+    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+}
+
+@keyframes myfirst
+{
+    from {background:#B0C4DE;}
+to {background:#778899;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    from {background:#B0C4DE;}
+to {background:#778899;}
+}
+
+#inspire
+{
+    background: transparent;
+    position:relative;
+    animation:mymove 5s;
+    -moz-animation:mymove 5s;
+    -webkit-animation:mymove 5s; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+    from {left:0px;}
+to {left:69%;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    from {left:0px;}
+to {left:69%;}
+}

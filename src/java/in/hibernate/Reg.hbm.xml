@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2013 8:20:25 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="in.hibernate.Reg" table="reg" catalog="project">
+        <id name="uname" type="string">
+            <column name="uname" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" length="30" not-null="true" />
+        </property>
+        <property name="lname" type="string">
+            <column name="lname" length="30" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="pass" length="30" not-null="true" />
+        </property>
+        <property name="cpass" type="string">
+            <column name="cpass" length="30" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="30" not-null="true" />
+        </property>
+        <property name="bday" type="string">
+            <column name="bday" length="10" not-null="true" />
+        </property>
+        <set name="userEvents" inverse="true">
+            <key>
+                <column name="username" length="30" />
+            </key>
+            <one-to-many class="in.hibernate.UserEvent" />
+        </set>
+    </class>
+</hibernate-mapping>

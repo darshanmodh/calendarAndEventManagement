@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2013 8:20:25 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="in.hibernate.UserEvent" table="user_event" catalog="project">
+        <id name="eventid" type="java.lang.Integer">
+            <column name="eventid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="reg" class="in.hibernate.Reg" fetch="select">
+            <column name="username" length="30" />
+        </many-to-one>
+        <property name="eventdate" type="timestamp">
+            <column name="eventdate" length="19" />
+        </property>
+        <property name="eventdesc" type="string">
+            <column name="eventdesc" length="300" />
+        </property>
+    </class>
+</hibernate-mapping>
